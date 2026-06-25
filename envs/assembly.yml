@@ -1,0 +1,15 @@
+name: hifi-assembly-compleasm
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.10
+  - hifiasm
+  - compleasm
+  - miniprot
+  - hmmer
+  - bwa
+  - samtools
+  - yahs
+  - openjdk>=8
+  - curl
