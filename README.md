@@ -161,6 +161,10 @@ The Conda environment includes hifiasm, Compleasm, BWA, samtools, YaHS,
 OpenJDK, and the Compleasm dependencies. Juicer Tools is supplied with
 `--juicer_tools_jar` or downloaded by the pipeline.
 
+The environment pins Python to 3.9 because Compleasm depends on `sepp` and
+`dendropy` versions that do not currently solve cleanly with newer Python
+releases on `linux-64`.
+
 The Conda profile is the supported complete environment. The generic
 Docker/Singularity profiles remain suitable only when their container is
 replaced with an image containing the full tool set.
