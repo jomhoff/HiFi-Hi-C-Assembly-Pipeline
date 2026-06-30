@@ -11,5 +11,5 @@ dependencies:
   - bwa
   - samtools
   - yahs
-  - openjdk>=8
+  - openjdk=17
   - curl

@@ -165,6 +165,9 @@ The environment pins Python to 3.9 because Compleasm depends on `sepp` and
 `dendropy` versions that do not currently solve cleanly with newer Python
 releases on `linux-64`.
 
+It also pins OpenJDK to 17 because Nextflow requires Java 8 or later but does
+not support newer Java releases such as OpenJDK 25.
+
 The Conda profile is the supported complete environment. The generic
 Docker/Singularity profiles remain suitable only when their container is
 replaced with an image containing the full tool set.
